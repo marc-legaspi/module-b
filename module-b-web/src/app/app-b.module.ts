@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { BCardComponent } from './b-card/b-card.component';
 import { AppComponent } from './app.component';
 import { RouterModule } from '@angular/router';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
@@ -10,8 +11,10 @@ import { RouterModule } from '@angular/router';
   declarations: [AppComponent, BCardComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    BrowserModule
   ],
-  exports: [AppComponent, BCardComponent]
+  exports: [AppComponent, BCardComponent],
+  bootstrap: [AppComponent]
 })
 export class AppBModule { }
